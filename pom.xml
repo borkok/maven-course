@@ -24,6 +24,10 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+    
+    <scm>
+        <developerConnection>scm:git:https://github.com/borkok/maven-course.git</developerConnection>
+    </scm>
 
     <build>
         <plugins>
