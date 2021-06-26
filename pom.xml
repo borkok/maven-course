@@ -6,20 +6,18 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>mb2g-mm-maven-fixme</artifactId>
-    <version>${revision}</version>
+    <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
     <modules>
         <module>web-app</module>
         <module>jpa-entities</module>
-        <module>from-intellij</module>
         <module>web-api</module>
         <module>converters</module>
     </modules>
 
     <properties>
-        <revision>1.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
@@ -32,6 +30,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
+                <version>1.2.2</version>
                 <configuration>
                     <flattenMode>bom</flattenMode>
                 </configuration>
