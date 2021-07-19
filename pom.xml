@@ -24,10 +24,38 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
-    
+
     <scm>
         <developerConnection>scm:git:https://github.com/borkok/maven-course.git</developerConnection>
     </scm>
+
+    <repositories>
+        <repository>
+            <id>snapshots</id>
+            <url>http://10.0.75.2:8081/repository/my-snapshots-repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>releases</id>
+            <url>http://10.0.75.2:8081/repository/my-releases-repo/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>my-releases</id>
+            <url>http://10.0.75.2:8081/repository/my-releases-repo/</url>
+        </repository>
+        <snapshotRepository>
+            <id>my-snapshots</id>
+            <url>http://10.0.75.2:8081/repository/my-snapshots-repo/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <build>
         <plugins>
