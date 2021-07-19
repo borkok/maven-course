@@ -30,18 +30,8 @@
 
     <repositories>
         <repository>
-            <id>snapshots</id>
-            <url>http://10.0.75.2:8081/repository/my-snapshots-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>releases</id>
-            <url>http://10.0.75.2:8081/repository/my-releases-repo/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
+            <id>all</id>
+            <url>http://10.0.75.2:8081/repository/my-group/</url>
         </repository>
     </repositories>
 
