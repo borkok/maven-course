@@ -1,0 +1,7 @@
+version: '2.1'
+services:
+  reposilite:
+    image: dzikoysk/reposilite:2.9.3
+    container_name: reposilite
+    ports:
+      - "8080:80"
