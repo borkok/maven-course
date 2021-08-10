@@ -5,7 +5,7 @@
     <parent>
         <artifactId>mb2g-mm-maven-fixme</artifactId>
         <groupId>guru.springframework</groupId>
-        <version>1.1</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>converters</artifactId>
